@@ -1,0 +1,25 @@
+---
+title: Welcome to Starlight
+description: Get started building your docs site with Starlight.
+template: splash
+---
+
+import Hero from "../../components/hero.astro";
+import Navbar from "../../components/navbar.astro";
+import Models from "../../components/Models.tsx";
+import AIProviders from "../../components/AIProviders.tsx";
+import BuildAI from "../../components/BuildAI.tsx";
+import ApplyAI from "../../components/ApplyAI.tsx";
+import Footer from "../../components/Footer.tsx";
+import CaseStudy from "../../components/CaseStudy.tsx";
+import Customers from "../../components/Customers.tsx";
+
+<Navbar />
+<Hero />
+<Models client:only="react" />
+<AIProviders client:only="react" />
+<BuildAI client:only="react" />
+<ApplyAI client:only="react" />
+<CaseStudy client:only="react" />
+<Customers client:only="react" />
+<Footer client:only="react" />
