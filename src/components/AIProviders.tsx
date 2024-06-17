@@ -1,9 +1,9 @@
 import React from "react";
-import openAI from "../../public/companies/openai.webp";
-import adept from "../../public/companies/adept.webp";
-import meta from "../../public/companies/meta.webp";
-import cohere from "../../public/companies/cohere.webp";
-import anthropic from "../../public/companies/anthropic.webp";
+import openAI from "../../public/companies/openai.png";
+import adept from "../../public/companies/adept.png";
+import meta from "../../public/companies/meta.png";
+import cohere from "../../public/companies/cohere.png";
+import anthropic from "../../public/companies/anthropic.png";
 
 function AIProviders() {
   const companies = [openAI, adept, meta, cohere, anthropic];

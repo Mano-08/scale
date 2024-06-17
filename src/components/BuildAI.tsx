@@ -116,7 +116,7 @@ function BuildAI() {
 
 function ThreeD() {
   return (
-    <div className="w-[500px] h-[300px] bg-red-300">
+    <div className="w-[500px] h-[300px] bg-black">
       <iframe
         src="https://lidar-now.scale.com/scene?title=Scene%20%231"
         style={{ height: "100%", width: "100%" }}
