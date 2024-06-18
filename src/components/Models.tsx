@@ -33,7 +33,7 @@ function Models() {
     setPage(index);
   }
   return (
-    <section className="flex flex-row items-center my-20 gap-20">
+    <section className="flex flex-col lg:flex-row items-center my-20 gap-20">
       <div className="flex flex-col items-start">
         {data.map((item, index) => (
           <div

@@ -4,8 +4,8 @@ description: Get started building your docs site with Starlight.
 template: splash
 ---
 
-import Hero from "../../components/hero.astro";
-import Navbar from "../../components/navbar.astro";
+import Hero from "../../components/Hero.tsx";
+import Navbar from "../../components/Navbar.tsx";
 import Models from "../../components/Models.tsx";
 import AIProviders from "../../components/AIProviders.tsx";
 import BuildAI from "../../components/BuildAI.tsx";
@@ -14,8 +14,8 @@ import Footer from "../../components/Footer.tsx";
 import CaseStudy from "../../components/CaseStudy.tsx";
 import Customers from "../../components/Customers.tsx";
 
-<Navbar />
-<Hero />
+<Navbar client:only="react" />
+<Hero client:only="react" />
 <Models client:only="react" />
 <AIProviders client:only="react" />
 <BuildAI client:only="react" />

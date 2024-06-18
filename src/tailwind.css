@@ -10,6 +10,19 @@
   border: 0;
 }
 
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-scroll {
+  animation: marquee infinite 500s linear;
+}
+
 body {
   background-color: black;
   color: white;
