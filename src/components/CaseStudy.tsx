@@ -36,7 +36,7 @@ function CaseStudy() {
     // },
   ];
   return (
-    <section className="flex flex-col items-center py-[20vh] bg-[#0b030a]">
+    <section className="flex flex-col gap-3 items-center my-[10vh] bg-[#0b030a]">
       <p className="text-[#D1AAD7] tracking-[4px] bg-white/5 rounded-full px-5 py-2 text-sm">
         LEARN HOW WE SERVE ENTERPRISES LARGE AND SMALL{" "}
       </p>
@@ -46,19 +46,36 @@ function CaseStudy() {
         more high-quality data than anybody else.
       </p>
 
-      <div className="flex flex-row items-end gap-7 leading-none h-full">
-        {data.map((ele, i) => (
-          <a
-            key={i}
-            className="flex flex-col gap-2  text-white h-[200px] w-[400px]"
-          >
-            <img src={ele.src} />
-            <p className="text-sm leading-none text-pink-300">{ele.title}</p>
-            <p className="text-[1.5rem] leading-none text-white">
-              {ele.content}
-            </p>
-          </a>
-        ))}
+      <div className="relative flex overflow-x-hidden flex-row gap-10 h-[60vh]">
+        <div className="py-12 animate-marquee flex flex-row gap-10">
+          {data.map((ele, i) => (
+            <a
+              key={i}
+              className="flex flex-col gap-2  text-white h-[200px] w-[400px]"
+            >
+              <img src={ele.src} />
+              <p className="text-sm leading-none text-pink-300">{ele.title}</p>
+              <p className="text-[1.5rem] leading-none text-white">
+                {ele.content}
+              </p>
+            </a>
+          ))}
+        </div>
+
+        <div className="absolute top-0 py-12 animate-marquee2 flex flex-row">
+          {data.map((ele, i) => (
+            <a
+              key={i}
+              className="flex flex-col gap-2  text-white h-[200px] w-[400px]"
+            >
+              <img src={ele.src} />
+              <p className="text-sm leading-none text-pink-300">{ele.title}</p>
+              <p className="text-[1.5rem] leading-none text-white">
+                {ele.content}
+              </p>
+            </a>
+          ))}
+        </div>
       </div>
     </section>
   );
