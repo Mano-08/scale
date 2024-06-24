@@ -28,7 +28,7 @@ body {
   color: white;
   width: 100vw;
   font-family: "Inter", sans-serif;
-  overflow-x: hidden;
+  overflow: hidden;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -37,6 +37,7 @@ body {
 html {
   box-sizing: border-box;
   width: 100vw;
+  overflow-x: hidden;
   padding: 0;
   margin: 0;
   border: 0;
@@ -161,4 +162,8 @@ html {
 
 .scroll__h::-webkit-scrollbar {
   display: none; /* Hide scrollbar in WebKit-based browsers */
+}
+
+.navigation-wrapper {
+  position: relative;
 }
