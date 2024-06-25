@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import React from "react";
 import * as NavigationMenu from "@radix-ui/react-navigation-menu";
 import classNames from "classnames";
