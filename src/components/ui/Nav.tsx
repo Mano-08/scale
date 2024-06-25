@@ -5,7 +5,7 @@ import { CaretDownIcon } from "@radix-ui/react-icons";
 
 const Nav = () => {
   return (
-    <NavigationMenu.Root className="relative lg:block hidden z-[10000] flex w-full justify-center flex-row ">
+    <NavigationMenu.Root className="relative lg:flex hidden z-[10000] w-full justify-center flex-row ">
       <NavigationMenu.List className="center m-0 flex list-none flex-row rounded-[6px] bg-black">
         <NavigationMenu.Item>
           <NavigationMenu.Trigger className="text-white focus:shadow-violet7 group flex select-none items-center justify-between gap-[2px] rounded-[4px] px-3 py-2 text-[15px] font-medium leading-none outline-none focus:shadow-[0_0_0_2px]">
@@ -73,11 +73,30 @@ const Nav = () => {
               aria-hidden
             />
           </NavigationMenu.Trigger>
-          <NavigationMenu.Content className="absolute top-0 left-0 w-full sm:w-auto">
-            <ul className="m-0 grid gap-4 cursor-pointer list-none gap-x-[10px] p-[22px] whitespace-nowrap leading-none sm:max-w-[600px] sm:grid-flow-col sm:grid-rows-3">
-              <a>Defence</a>
-              <a>Federal</a>
-              <a>Public</a>
+          <NavigationMenu.Content className="absolute top-0 right-0 w-full sm:w-auto">
+            <ul className="m-0 text-white grid list-none leading-none relative p-[22px] w-[250px] grid-rows-3 justify-start">
+              <ListItem
+                className="text-white"
+                title="Defence"
+                className="text-white"
+                href="/primitives/docs/overview/introduction"
+              >
+                {""}
+              </ListItem>
+              <ListItem
+                className="text-white"
+                title="Federal"
+                href="/primitives/docs/overview/getting-started"
+              >
+                {""}
+              </ListItem>
+              <ListItem
+                className="text-white"
+                title="Public"
+                href="/primitives/docs/guides/styling"
+              >
+                {""}
+              </ListItem>
             </ul>
           </NavigationMenu.Content>
         </NavigationMenu.Item>
@@ -162,15 +181,59 @@ const Nav = () => {
               aria-hidden
             />
           </NavigationMenu.Trigger>
-          <NavigationMenu.Content className="absolute top-0 left-0 w-full sm:w-auto">
-            <ul className="m-0 flex flex-col gap-4 cursor-pointer list-none gap-x-[10px] p-[22px] whitespace-nowrap leading-none sm:max-w-[600px] ">
-              <a>About </a>
-              <a>Blog</a>
-              <a>Guides</a>
-              <a>Events</a>
-              <a>Careers</a>
-              <a>Documentation</a>
-              <a>AI readiness Report 2024</a>
+          <NavigationMenu.Content className="absolute top-0 right-0 w-full sm:w-auto">
+            <ul className="m-0 text-white grid list-none leading-none p-[22px] w-[500px] grid-rows-7 justify-end">
+              <ListItem
+                className="text-white"
+                title="About"
+                className="text-white"
+                href="/primitives/docs/overview/introduction"
+              >
+                {""}
+              </ListItem>
+              <ListItem
+                className="text-white"
+                title="Blog"
+                href="/primitives/docs/overview/getting-started"
+              >
+                {""}
+              </ListItem>
+              <ListItem
+                className="text-white"
+                title="Guides"
+                href="/primitives/docs/guides/styling"
+              >
+                {""}
+              </ListItem>
+              <ListItem
+                className="text-white"
+                title="Events"
+                href="/primitives/docs/guides/animation"
+              >
+                {""}
+              </ListItem>
+              <ListItem
+                className="text-white"
+                title="Careers"
+                href="/primitives/docs/overview/accessibility"
+              >
+                {""}
+              </ListItem>
+              <ListItem
+                className="text-white"
+                title="Documentation"
+                href="/primitives/docs/overview/releases"
+              >
+                {""}
+              </ListItem>
+
+              <ListItem
+                className="text-white"
+                title="AI readiness Report 2024"
+                href="/primitives/docs/overview/releases"
+              >
+                {""}
+              </ListItem>
             </ul>
           </NavigationMenu.Content>
         </NavigationMenu.Item>

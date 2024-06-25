@@ -3,62 +3,56 @@ import React from "react";
 const Footer = () => {
   return (
     <footer className="flex flex-col gap-4">
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "row",
-        }}
-        className="justify-between text-[1.01rem] py-10 text-neutral-400 leading-none"
-      >
+      <div className="grid grid-cols-2 gap-10 lg:flex lg:flex-row justify-between text-[1.01rem] py-10 text-neutral-400 leading-none">
         <div className="flex flex-col gap-4">
-          <p className="font-semibold">PRODUCTS</p>
-          <p className="text-sm">Scale Data Engine</p>
-          <p className="text-sm"> Scale GenAI Platform</p>
-          <p className="text-sm">Scale Donovan</p>
+          <p className="font-semibold lg:text-base text-sm">PRODUCTS</p>
+          <p className="lg:text-sm text-xs ">Scale Data Engine</p>
+          <p className="lg:text-sm text-xs "> Scale GenAI Platform</p>
+          <p className="lg:text-sm text-xs ">Scale Donovan</p>
 
-          <p className="font-semibold pt-5">GOVERNMENT</p>
-          <p className="text-sm">Defense</p>
-          <p className="text-sm">Federal</p>
-          <p className="text-sm">Public Sector</p>
+          <p className="font-semibold lg:text-base text-sm pt-5">GOVERNMENT</p>
+          <p className="lg:text-sm text-xs ">Defense</p>
+          <p className="lg:text-sm text-xs ">Federal</p>
+          <p className="lg:text-sm text-xs ">Public Sector</p>
         </div>
 
         <div className="flex flex-col gap-4">
-          <p className="font-semibold">COMPANY</p>
-          <p className="text-sm">About</p>
-          <p className="text-sm">Careers</p>
-          <p className="text-sm">Security</p>
-          <p className="text-sm">Terms</p>
-          <p className="text-sm">Privacy</p>
+          <p className="font-semibold lg:text-base text-sm">COMPANY</p>
+          <p className="lg:text-sm text-xs ">About</p>
+          <p className="lg:text-sm text-xs ">Careers</p>
+          <p className="lg:text-sm text-xs ">Security</p>
+          <p className="lg:text-sm text-xs ">Terms</p>
+          <p className="lg:text-sm text-xs ">Privacy</p>
         </div>
 
         <div className="flex flex-col gap-4">
-          <p className="font-semibold">RESOURCES</p>
-          <p className="text-sm">Blog</p>
-          <p className="text-sm">Customers</p>
-          <p className="text-sm">Events</p>
-          <p className="text-sm">Open Datasets</p>
-          <p className="text-sm">Documentation</p>
-          <p className="text-sm">Guides</p>
-          <p className="text-sm">Community</p>
-          <p className="text-sm">AI Readiness Report 2024</p>
+          <p className="font-semibold lg:text-base text-sm">RESOURCES</p>
+          <p className="lg:text-sm text-xs ">Blog</p>
+          <p className="lg:text-sm text-xs ">Customers</p>
+          <p className="lg:text-sm text-xs ">Events</p>
+          <p className="lg:text-sm text-xs ">Open Datasets</p>
+          <p className="lg:text-sm text-xs ">Documentation</p>
+          <p className="lg:text-sm text-xs ">Guides</p>
+          <p className="lg:text-sm text-xs ">Community</p>
+          <p className="lg:text-sm text-xs ">AI Readiness Report 2024</p>
         </div>
 
         <div className="flex flex-col gap-4">
-          <p className="font-semibold">GUIDES</p>
-          <p className="text-sm">Data Labeling</p>
-          <p className="text-sm">ML Model Training</p>
-          <p className="text-sm">Diffusion Models</p>
-          <p className="text-sm">Guide to AI for eCommerce</p>
-          <p className="text-sm">Computer Vision Applications</p>
-          <p className="text-sm">Large Language Models</p>
+          <p className="font-semibold lg:text-base text-sm">GUIDES</p>
+          <p className="lg:text-sm text-xs ">Data Labeling</p>
+          <p className="lg:text-sm text-xs ">ML Model Training</p>
+          <p className="lg:text-sm text-xs ">Diffusion Models</p>
+          <p className="lg:text-sm text-xs ">Guide to AI for eCommerce</p>
+          <p className="lg:text-sm text-xs ">Computer Vision Applications</p>
+          <p className="lg:text-sm text-xs ">Large Language Models</p>
         </div>
 
         <div className="flex flex-col gap-4">
-          <p className="font-semibold">CONTACT</p>
-          <p className="text-sm">sales@scale.com</p>
-          <p className="text-sm">support@scale.com</p>
-          <p className="text-sm">careers@scale.com</p>
-          <p className="text-sm">press@scale.com</p>
+          <p className="font-semibold lg:text-base text-sm">CONTACT</p>
+          <p className="lg:text-sm text-xs ">sales@scale.com</p>
+          <p className="lg:text-sm text-xs ">support@scale.com</p>
+          <p className="lg:text-sm text-xs ">careers@scale.com</p>
+          <p className="lg:text-sm text-xs ">press@scale.com</p>
 
           <div className="flex flex-row items-end gap-4">
             <svg
@@ -90,7 +84,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="flex py-4 flex-row items-end pt-4 border-solid border-t border-t-neutral-700 justify-between text-sm text-neutral-500">
+      <div className="flex py-4 gap-4 flex-col items-start lg:flex-row pt-4 border-solid border-t border-t-neutral-700 justify-between lg:text-sm text-xs  text-neutral-500">
         <p>Copyright © 2024 Scale AI, Inc. All rights reserved.</p>
         <p>Terms of Use & Privacy Policy</p>
       </div>

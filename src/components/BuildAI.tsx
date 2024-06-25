@@ -7,7 +7,7 @@ function BuildAI() {
   const [selected, setSelected] = React.useState<string>("3D");
   const options = ["3D", "Mapping", "Image", "Text", "Audio"];
   return (
-    <section className="flex flex-col gap-3 items-center py-18">
+    <section className="flex flex-col gap-3 items-center py-16">
       <p className="text-[#D1AAD7] tracking-[4px] bg-white/5 rounded-full px-5 py-2 text-xs lg:text-sm">
         BUILD AI
       </p>
@@ -18,6 +18,46 @@ function BuildAI() {
         For AI teams, Scale Data Engine improves your models by improving your
         data.
       </p>
+
+      <div className="w-full mt-16 flex flex-col lg:flex-row-reverse gap-8 items-start justify-between bg-[#100410] p-5 rounded-xl">
+        <div className="flex flex-col gap-3 items-start">
+          <p className="font-aeonik text-[2rem] xl:text-4xl mb-2 text-white">
+            RLHF{" "}
+          </p>
+          <p className="text-neutral-400 w-[80vw] lg:w-auto">
+            Powering the next generation of Generative AI
+          </p>
+
+          <p className="w-[320px] lg:w-[400px]">
+            Scale Generative AI Data Engine powers the most advanced LLMs and
+            generative models in the world through world-class RLHF, data
+            generation, model evaluation, safety, and alignment.
+          </p>
+          <button className="hidden lg:flex font-medium my-4 rounded-xl justify-center flex-nowrap whitespace-nowrap transition-translate duration-300 cursor-pointer group items-center h-full group leading-[150%] bg-custom-1 text-sm px-[30px] py-[10px]">
+            Label My Data
+            <span className="inline-block ml-1 font-normal duration-300 w-fit transition-translate group-hover:translate-x-1 font-unicode">
+              →
+            </span>
+          </button>
+        </div>
+
+        <div className="flex flex-col items-start gap-6">
+          <video
+            autoPlay={true}
+            muted={true}
+            controls={false}
+            className="w-[350px] lg:w-[600px] rounded-lg"
+          >
+            <source src="/public/rfhl.mkv"></source>
+          </video>
+          <button className="lg:hidden flex font-medium my-4 rounded-xl justify-center flex-nowrap whitespace-nowrap transition-translate duration-300 cursor-pointer group items-center h-full group leading-[150%] bg-custom-1 text-sm px-[30px] py-[10px]">
+            Curate My Data
+            <span className="inline-block ml-1 font-normal duration-300 w-fit transition-translate group-hover:translate-x-1 font-unicode">
+              →
+            </span>
+          </button>
+        </div>
+      </div>
 
       <div className="w-full flex flex-col lg:flex-row gap-4 items-start justify-between bg-[#100410] p-5 rounded-xl">
         <div className="flex flex-col gap-4 items-start">
@@ -64,21 +104,21 @@ function BuildAI() {
           ) : selected === "Mapping" ? (
             <img
               src={mapping.src}
-              className="w-[350px] lg:w-[500px] h-auto object-cover object-center"
+              className="w-[350px] lg:w-[600px] h-auto object-cover object-center"
               alt="mapping"
             />
           ) : selected === "Image" ? (
             <img
               src={labeling.src}
-              className="w-[350px] lg:w-[500px] h-auto object-cover object-center"
+              className="w-[350px] lg:w-[600px] h-auto object-cover object-center"
               alt="image labeling"
             />
           ) : selected === "Audio" ? (
-            <div className="w-[350px] lg:w-[500px]">
+            <div className="w-[350px] lg:w-[600px]">
               <Text />
             </div>
           ) : (
-            <div className="w-[350px] lg:w-[500px]">
+            <div className="w-[350px] lg:w-[600px]">
               <Text />
             </div>
           )}
@@ -119,7 +159,7 @@ function BuildAI() {
         <div className="flex flex-col items-start gap-6">
           <img
             src={datac.src}
-            className="w-[500px] h-auto object-cover object-center"
+            className="w-[600px] h-auto object-cover object-center"
             alt="image labeling"
           />
           <button className="lg:hidden flex font-medium my-4 rounded-xl justify-center flex-nowrap whitespace-nowrap transition-translate duration-300 cursor-pointer group items-center h-full group leading-[150%] bg-custom-1 text-sm px-[30px] py-[10px]">
@@ -136,7 +176,7 @@ function BuildAI() {
 
 function ThreeD() {
   return (
-    <div className="w-[300px] h-[172px] lg:w-[500px] lg:h-[300px] bg-black">
+    <div className="w-[300px] h-[172px] lg:w-[600px] lg:h-[300px] bg-black">
       <iframe
         src="https://lidar-now.scale.com/scene?title=Scene%20%231"
         style={{ height: "100%", width: "100%" }}

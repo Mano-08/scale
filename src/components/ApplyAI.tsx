@@ -76,7 +76,7 @@ function ModelsMobileView() {
   });
 
   return (
-    <section className="lg:hidden block py-18">
+    <section className="lg:hidden block">
       <div className="navigation-wrapper w-[80vw]">
         <div ref={sliderRef} className="keen-slider">
           <div className="keen-slider__slide mr-6">
