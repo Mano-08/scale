@@ -4,11 +4,11 @@ import foundation from "../../public/foundation-models.webp";
 import dataEngine from "../../public/data-engine.webp";
 
 export const customerImages = [
-  "/public/customers/cia.svg",
-  "/public/customers/airforce.svg",
-  "/public/customers/amazon.png",
-  "/public/customers/toyota.svg",
-  "/public/customers/salesforce.png",
+  "/customers/cia.svg",
+  "/customers/airforce.svg",
+  "/customers/amazon.png",
+  "/customers/toyota.svg",
+  "/customers/salesforce.png",
 ];
 
 export const reviews: {

@@ -44,11 +44,12 @@ function BuildAI() {
         <div className="flex flex-col items-start gap-6">
           <video
             autoPlay={true}
+            loop={true}
             muted={true}
             controls={false}
             className="w-[350px] lg:w-[600px] rounded-lg"
           >
-            <source src="/public/rfhl.mkv"></source>
+            <source src="/rfhl.mkv"></source>
           </video>
           <button className="lg:hidden flex font-medium my-4 rounded-xl justify-center flex-nowrap whitespace-nowrap transition-translate duration-300 cursor-pointer group items-center h-full group leading-[150%] bg-custom-1 text-sm px-[30px] py-[10px]">
             Curate My Data

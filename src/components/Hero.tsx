@@ -195,10 +195,10 @@ function Hero() {
             </span>
           </a>
         </div>
-        <p className="text-sm lg:text-[1.1rem] text-neutral-400 py-8 pt-14 lg:pt-28 leading-[1.4] lg:leading-none relative z-[200] text-center md:w-[60vw] w-[90vw]">
+        <p className="text-xs lg:text-sm text-neutral-400 py-8 pt-14 lg:pt-28 leading-[1.4] lg:leading-none relative z-[200] text-center md:w-[60vw] w-[90vw]">
           Scale works with{" "}
-          <span className="text-white">Generative AI Companies,</span> U.S.
-          Government Agencies & Enterprises
+          <span className="text-white">Generative AI Companies,</span>{" "}
+          <span>U.S. Government Agencies</span> & <span>Enterprises</span>
         </p>
 
         <div className="relative flex overflow-x-hidden">
