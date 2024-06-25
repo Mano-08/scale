@@ -17,23 +17,101 @@ function MobileNav() {
           <div className="flex flex-col gap-4 px-5">
             <div className="flex flex-row text-neutral-400 items-center justify-between">
               <span>PRODUCTS</span>{" "}
-              <span onClick={() => setDisplayNav(false)}>x</span>
+              <div
+                onClick={() => setDisplayNav(false)}
+                className="flex items-center justify-center w-6 h-6 bg-neutral-600 rounded-full cursor-pointer"
+              >
+                <svg width="8" height="8" viewBox="0 0 12 12">
+                  <rect
+                    width="15.3125"
+                    height="1.48871"
+                    transform="matrix(0.701055 -0.713108 0.701055 0.713108 0 10.9385)"
+                    fill="#fff"
+                  ></rect>
+                  <rect
+                    width="15.3125"
+                    height="1.48871"
+                    transform="matrix(0.701055 0.713108 -0.701055 0.713108 1.26514 0)"
+                    fill="#fff"
+                  ></rect>
+                </svg>
+              </div>
             </div>
 
             <div className="grid grid-cols-2">
               <div className="flex flex-col gap-3">
-                <p>Scale Data Engine</p>
-                <p>For Generative AI</p>
-                <p>For Government</p>
-                <p>For Automotive</p>
-                <p>Scale Donovan</p>
-                <p>Scale GenAI Platform</p>
+                <p className="flex flex-row items-center gap-3">
+                  <img
+                    src="/public/nav/engine.png"
+                    className="h-[16px] w-[16px]"
+                  />
+                  Scale Data Engine
+                </p>
+                <p className="flex flex-row items-center gap-3">
+                  <img
+                    src="/public/nav/genai.png"
+                    className="h-[16px] w-[16px]"
+                  />
+                  For Generative AI
+                </p>
+                <p className="flex flex-row items-center gap-3">
+                  <img
+                    src="/public/nav/gov.png"
+                    className="h-[16px] w-[16px]"
+                  />
+                  For Government
+                </p>
+                <p className="flex flex-row items-center gap-3">
+                  <img
+                    src="/public/nav/automotive.png"
+                    className="h-[16px] w-[16px]"
+                  />
+                  For Automotive
+                </p>
+                <p className="flex flex-row items-center gap-3">
+                  <img
+                    src="/public/nav/donovan.png"
+                    className="h-[16px] w-[16px]"
+                  />
+                  Scale Donovan
+                </p>
+                <p className="flex flex-row items-center gap-3">
+                  <img
+                    src="/public/nav/platform.png"
+                    className="h-[16px] w-[16px]"
+                  />
+                  Scale GenAI Platform
+                </p>
               </div>
               <div className="flex flex-col gap-3">
-                <p>Scale Evaluation</p>
-                <p>For Model Developers</p>
-                <p>For Public Sector</p>
-                <p>For Enterprise</p>
+                <p className="flex flex-row items-center gap-3">
+                  <img
+                    src="/public/nav/evaluation.png"
+                    className="h-[16px] w-[16px]"
+                  />
+                  Scale Evaluation
+                </p>
+                <p className="flex flex-row items-center gap-3">
+                  <img
+                    src="/public/nav/devs.png"
+                    className="h-[16px] w-[16px]"
+                  />
+                  For Model Developers
+                </p>
+                <p className="flex flex-row items-center gap-3">
+                  <img
+                    src="/public/nav/public.png"
+                    className="h-[16px] w-[16px]"
+                  />
+                  For Public Sector
+                </p>
+                <p className="flex flex-row items-center gap-3">
+                  <img
+                    src="/public/nav/enterprise.png"
+                    className="h-[16px] w-[16px]"
+                  />
+                  For Enterprise
+                </p>
               </div>
             </div>
           </div>
@@ -46,11 +124,29 @@ function MobileNav() {
 
             <div className="grid grid-cols-2">
               <div className="flex flex-col gap-3">
-                <p>Defence Data Engine</p>
-                <p>Public Sector Generative AI</p>
+                <p className="flex flex-row items-center gap-3">
+                  <img
+                    src="/public/nav/gov.png"
+                    className="h-[16px] w-[16px]"
+                  />
+                  Defence Data Engine
+                </p>
+                <p className="flex flex-row items-center gap-3">
+                  <img
+                    src="/public/nav/public-sector.png"
+                    className="h-[16px] w-[16px]"
+                  />
+                  Public Sector Generative AI
+                </p>
               </div>
               <div className="flex flex-col gap-3">
-                <p>Federal</p>
+                <p className="flex flex-row items-center gap-3">
+                  <img
+                    src="/public/nav/federal.png"
+                    className="h-[16px] w-[16px]"
+                  />
+                  Federal
+                </p>
               </div>
             </div>
           </div>
@@ -63,15 +159,57 @@ function MobileNav() {
 
             <div className="grid grid-cols-2">
               <div className="flex flex-col gap-3">
-                <p>About</p>
-                <p>Guides</p>
-                <p>Careers</p>
-                <p>AI Readiness Report 2024</p>
+                <p className="flex flex-row items-center gap-3">
+                  <img
+                    src="/public/nav/about.svg"
+                    className="h-[16px] w-[16px]"
+                  />
+                  About
+                </p>
+                <p className="flex flex-row items-center gap-3">
+                  <img
+                    src="/public/nav/guides.svg"
+                    className="h-[16px] w-[16px]"
+                  />
+                  Guides
+                </p>
+                <p className="flex flex-row items-center gap-3">
+                  <img
+                    src="/public/nav/careers.svg"
+                    className="h-[16px] w-[16px]"
+                  />
+                  Careers
+                </p>
+                <p className="flex flex-row items-center gap-3">
+                  <img
+                    src="/public/nav/ai-readiness-report.svg"
+                    className="h-[16px] w-[16px]"
+                  />
+                  AI Readiness Report 2024
+                </p>
               </div>
               <div className="flex flex-col gap-3">
-                <p>Blog</p>
-                <p>Events</p>
-                <p>Documentation</p>
+                <p className="flex flex-row items-center gap-3">
+                  <img
+                    src="/public/nav/blog.svg"
+                    className="h-[16px] w-[16px]"
+                  />
+                  Blog
+                </p>
+                <p className="flex flex-row items-center gap-3">
+                  <img
+                    src="/public/nav/events.svg"
+                    className="h-[16px] w-[16px]"
+                  />
+                  Events
+                </p>
+                <p className="flex flex-row items-center gap-3">
+                  <img
+                    src="/public/nav/documentation.svg"
+                    className="h-[16px] w-[16px]"
+                  />
+                  Documentation
+                </p>
               </div>
             </div>
           </div>
@@ -84,15 +222,53 @@ function MobileNav() {
 
             <div className="grid grid-cols-2">
               <div className="flex flex-col gap-3">
-                <p>Open AI </p>
-                <p>Toyota</p>
-                <p>Flexport</p>
-                <p>See All Customers</p>
+                <p className="flex flex-row items-center gap-3">
+                  <img
+                    src="/public/nav/open-ai.png"
+                    className="h-[16px] w-[16px]"
+                  />
+                  Open AI{" "}
+                </p>
+                <p className="flex flex-row items-center gap-3">
+                  <img
+                    src="/public/nav/toyota.png"
+                    className="h-[16px] w-[16px]"
+                  />
+                  Toyota
+                </p>
+                <p className="flex flex-row items-center gap-3">
+                  <img
+                    src="/public/nav/flexport.png"
+                    className="h-[16px] w-[16px]"
+                  />
+                  Flexport
+                </p>
+                <p className="flex flex-row items-center gap-3">
+                  See All Customers
+                </p>
               </div>
               <div className="flex flex-col gap-3">
-                <p>Microsoft</p>
-                <p>Brex</p>
-                <p>OpenSea</p>
+                <p className="flex flex-row items-center gap-3">
+                  <img
+                    src="/public/nav/microsoft.png"
+                    className="h-[16px] w-[16px]"
+                  />
+                  Microsoft
+                </p>
+                <p className="flex flex-row items-center gap-3">
+                  <img
+                    src="/public/nav/brex.png"
+                    className="h-[16px] w-[16px]"
+                  />
+                  Brex
+                </p>
+                <p className="flex flex-row items-center gap-3">
+                  <img
+                    src="/public/nav/opensea.png"
+                    className="h-[16px] w-[16px]"
+                  />
+                  OpenSea
+                </p>
               </div>
             </div>
           </div>
